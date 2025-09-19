@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+#canvas {
+    border: 1px solid #ed0d0d;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+}
