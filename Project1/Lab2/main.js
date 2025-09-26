@@ -1,0 +1,155 @@
+ "use strict"
+let drawheight = 500;
+let drawwidth = 500;
+/*  Variable that enables you to "talk to" your SVG drawing canvas. */
+let drawing = d3.select("#canvas")
+    .append("svg")
+    .attr("width", drawwidth)
+    .attr("height", drawheight);
+
+/* Draw a border that matches the maximum drawing area for this assignment.
+    Assign the border to a variable so that:
+        (1) We know what the purpose of the shape is, and
+        (2) We will have the ability to change it later (in a future assignment)
+*/
+let border = drawing.append("rect")
+    .attr("width", drawwidth)
+    .attr("height", drawheight)
+    .attr("fill", "lightblue")
+    .attr("stroke", "red");
+
+/* Write your code for Project 1 beneath this comment */
+/*head circle*/
+let doghead = drawing.append("circle")
+    .attr("cx", 150)
+    .attr("cy", 200)
+    .attr("r", 80)
+    .attr("fill", "#654321")
+    .attr("stroke", "black");
+    
+let mouthleftcircle=drawing.append("circle")/*mouth cheeks left side*/
+.attr("cx",70)
+.attr("cy",260)
+.attr("r",40)
+.attr("fill","#A67C52")
+.attr("fill-zindex",-1)
+
+let rightcircle2=drawing.append("circle")
+.attr("cx",210)
+.attr("cy",261)
+.attr("r",40)
+.attr("fill","#A67C52")
+.attr("fill-zindex",-1)
+
+
+
+let lefteye = drawing.append("circle")
+.attr("cx",100)
+.attr("cy",170)
+.attr("r",10)
+.attr("fill","black")
+.attr("stroke","black");
+let righteye = drawing.append("circle")
+.attr("cx",200)
+.attr("cy",170)
+.attr("r",10)
+.attr("fill","black")
+.attr("stroke","black");
+let forhead=drawing.append("line")
+.attr("x1",130)
+.attr("y1",120)
+.attr("x2",160)
+.attr("y2",150)
+.attr("stroke","black")
+.attr("stroke-width",3)
+let forehead2=drawing.append("line")
+.attr("x1",170)
+.attr("y1",120)
+.attr("x2",160)
+.attr("y2",150)
+.attr("stroke","black")
+.attr("stroke-width",3)
+
+let leftear=drawing.append("polygon")
+.attr("points","120,320,60,320,50,300")
+.attr("fill","#A67C52")
+.attr("stroke","black")
+let rightear=drawing.append("polygon")
+.attr("points","225,100,270,180,210,150")
+.attr("fill","#A67C52")
+.attr("stroke","black")
+
+/*
+let leftline=drawing.append("line")
+.attr("x1",70)
+.attr("y1",220)
+.attr("x2",210)
+.attr("y2",220)
+.attr("stroke","#E5A552")
+.attr("stroke-width",10)
+let mouthrightline2=drawing.append("line")
+.attr("x1",210)
+.attr("y1",220)
+.attr("x2",210)
+.attr("y2",298)
+.attr("stroke","#E5A552")
+.attr("stroke-width",10)
+.attr("fill-zindex",-1)
+let mouthleftline2=drawing.append("line")
+.attr("x1",70)
+.attr("y1",220)
+.attr("x2",70)
+.attr("y2",300)
+.attr("stroke","#E5A552")
+.attr("stroke-width",10)
+.attr("fill-zindex",-1)
+let mouthbottomline=drawing.append("line")
+.attr("x1",70)
+.attr("y1",300)
+.attr("x2",210)
+.attr("y2",298)
+.attr("stroke","#E5A552")
+.attr("stroke-width",10)
+.attr("fill-zindex",-1)*/
+let mouthrect=drawing.append("rect")
+.attr("x",70)
+.attr("y",220)
+.attr("width",140)
+.attr("height",80)
+.attr("fill","#E5A552")
+
+.attr("fill","#A67C52")
+.attr("stroke","")
+.attr("stroke-width",2)
+let nose=drawing.append("circle")
+.attr("cx",146)
+.attr("cy",215)
+.attr("r",20)
+.attr("fill","black")
+let teethcointainerrect=drawing.append("rect")
+.attr("x",70)
+.attr("y",260)
+.attr("width",135)
+.attr("height",40)
+.attr("fill","#E5A552")
+.attr("stroke","A67C52")
+.attr("stroke-width",2)
+
+let teethright=drawing.append("polygon")
+.attr("points","207,235,205,298,180,260")
+.attr("fill","white")
+.attr("stroke","white")
+.attr("stroke-width",2) 
+let teethleft=drawing.append("polygon")
+.attr("points","74,235,69,298,100,260")
+.attr("fill","white")
+.attr("stroke","white")
+.attr("stroke-width",2) 
+let teethline=drawing.append("line")
+.attr("x1",100)
+.attr("y1",260)
+.attr("x2",180)
+.attr("y2",260)
+.attr("stroke","A67C52")
+.attr("stroke-width",2)
+
