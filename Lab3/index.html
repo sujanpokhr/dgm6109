@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab #3</title>
+  <script src="lab3.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="output.js" defer></script>
+  <style>
+    #inputF {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border: 1px solid black;
+      cursor: pointer;
+      font-size: 12px;
+      border-radius: 5px;
+    }
+
+    #submit:hover {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sujan Pokhrel Lab #3</h1>
+  <p>This program lets the user input temperature in Fahrenheit and convert it to Celsius or Kelvin.</p>
+
+  <input id="inputF" type="text" placeholder="Enter temperature in Fahrenheit">
+  <button id="submit">Convert</button>
+  
+  <p>Choose a conversion:
+    <select id="conversionChoice">
+      <option value="c">Celsius</option>
+      <option value="k">Kelvin</option>
+    </select>
+  </p>
+
+  <div id="output"></div>
+</body>
+</html>
+
