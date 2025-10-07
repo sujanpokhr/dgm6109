@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Project 2-1: Food Ordering System</title>
+</head>
+
+<body>
+  <h2>Simple Food Ordering System</h2>
+
+  <form id="orderForm">
+    <p>
+      <label for="combo">Which combo are you ordering?</label>
+      <select id="combo">
+        <option value="">--Select--</option>
+        <option value="pizza">Pizza & Salad</option>
+        <option value="burger">Hamburger & Fries</option>
+        <option value="taco">Taco Platter</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="quantity">How many are you ordering?</label>
+      <input id="quantity" type="number" min="1">
+    </p>
+
+    <p>
+      <label for="zipcode">ZIP Code:</label>
+      <input id="zipcode" type="text" maxlength="5" placeholder="12345">
+    </p>
+
+    <button id="submit" type="button">Submit Order</button>
+    <div id="output"></div>
+    <button id="reset" hidden>Start Over</button>
+  </form>
+
+  <hr />
+  <a href="./flowchart.pdf">View my flowchart</a>
+
+  <script src="output.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
