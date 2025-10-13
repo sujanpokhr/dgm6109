@@ -1,0 +1,74 @@
+/*
+  Author: Sujan Pokhrel
+  Date: Oct 2025
+  Exercise: Snippet 02 – CSS Styling
+  References:
+    • MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS
+    • W3Schools https://www.w3schools.com/css/
+*/
+
+/* Global layout + font */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #fafafa;
+
+  /* Center all content */
+  text-align: center;
+}
+
+/* Space between elements */
+h1, h2, h3, h4, p, figure, a {
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Headings styling */
+h1 {
+  color: #1e3d7b;
+}
+h2, h3, h4 {
+  color: #333;
+}
+
+/* Paragraphs — centered and responsive */
+p {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* In-text link style + hover/focus */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Linked image hover + focus */
+a img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+a img:hover,
+a img:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Figure + caption centered */
+figure {
+  text-align: center;
+  margin: 0 auto 20px;}
