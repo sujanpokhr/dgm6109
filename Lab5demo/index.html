@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5 Demo – Sujan Pokhrel</title>
+  <script src="d3.min.js"></script>
+
+  <!-- Load your drawing function -->
+  <script src="elements/dog.js"></script>
+
+  <!-- Load main.js last -->
+  <script src="main.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    #controls {
+      margin: 20px;
+    }
+    svg {
+      background: lightblue;
+      border: 2px solid #444;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lab 5 Demo</h1>
+
+  <div id="controls">
+    <label>Show origin:
+      <select id="showOrigin">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+      </select>
+    </label>
+
+    <button id="drawBtn">Draw!</button>
+  </div>
+
+  <div id="canvas"></div>
+</body>
+</html>
