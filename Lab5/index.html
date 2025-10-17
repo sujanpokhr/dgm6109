@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Combine Drawings</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 20px;
+    }
+
+    select, button, label {
+      margin: 8px;
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+
+    svg {
+      background-color: white;
+      border: 2px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Combine Drawings (Lab 5)</h2>
+
+  <div>
+    <label>Drawing 1:</label>
+    <select id="drawing1"></select><br>
+
+    <label>Drawing 2:</label>
+    <select id="drawing2"></select><br>
+
+    <label>Drawing 3:</label>
+    <select id="drawing3"></select><br>
+
+    <label>Drawing 4:</label>
+    <select id="drawing4"></select><br><br>
+
+    <!-- ✅ Dropdown for Origin Selector -->
+    <label>Show Origin:</label>
+    <select id="originSelect">
+      <option value="yes">Yes</option>
+      <option value="no" selected>No</option>
+    </select><br><br>
+
+    <button id="drawButton">Draw All</button>
+  </div>
+
+  <!-- Canvas -->
+  <svg id="canvas" width="900" height="600"></svg>
+
+  <!-- Load scripts -->
+  <script src="elements/butterfly.js"></script>
+  <script src="elements/ladybug.js"></script>
+  <script src="elements/fish.js"></script>
+  <script src="elements/dog.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
