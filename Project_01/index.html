@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonateLife Style Guide | Sujan Pokhrel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Red_Cross.svg" target="_blank">
+      <img src="image/redcross.png"
+           alt="Red Cross Logo" class="logo">
+    </a>
+    <h1>DonateLife</h1>
+    <p class="subtitle">Design standards for a blood donation website</p>
+    <nav>
+      <button class="nav-btn" type="button">Menu</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Introduction -->
+    <section>
+      <h2>1. Purpose and Overview</h2>
+      <p>
+        <a href="https://www.blood.ca/en" target="_blank">Canadian Blood Services</a> inspires this visual system.
+        The DonateLife style guide defines the typography, colors, and components that create a consistent
+        and accessible design for users who want to learn about or participate in blood donation programs.
+      </p>
+    </section>
+
+    <!-- 2. Headings -->
+    <section>
+      <h2>2. Heading Hierarchy</h2>
+      <h1>Main Page Title Example</h1>
+      <h2>Section Title Example</h2>
+      <h3>Subsection Heading Example</h3>
+      <h4>Minor Caption or Label Example</h4>
+      <p>This hierarchy establishes consistent typographic rhythm and clarity for content sections.</p>
+    </section>
+
+    <!-- 3. Buttons -->
+    <section>
+      <h2>3. Buttons and Links</h2>
+      <div class="button-group">
+        <button class="primary" type="button">Donate Now</button>
+        <button class="secondary" type="button">Learn More</button>
+        <a href="#colors" class="text-link">View Color Palette</a>
+      </div>
+    </section>
+
+    <!-- 4. Input Fields -->
+    <section>
+      <h2>4. Input Fields</h2>
+      <form>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="you@example.com"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" placeholder="Enter your city">
+               <label for="bloodtype">Blood Type:</label><br>
+        <input type="text" id="bloodtype" placeholder="A+, O-, etc." required><br>
+
+        <input type="submit" value="Submit" class="form-submit">
+      </form>
+    </section>
+
+    <!-- 5. Linked Image -->
+    <section>
+      <h2>5. Linked Image</h2>
+      <a href="https://www.redcross.ca/" target="_blank" class="linked-image">
+        <img src="image/redcross.png"
+             alt="Red Cross Symbol" width="120">
+      </a>
+      <p>The Red Cross logo above links directly to the Canadian Red Cross homepage.
+         When hovered, the image subtly enlarges and the cursor changes to indicate interactivity.</p>
+    </section>
+
+    <!-- 6. Color Palette -->
+    <section id="colors">
+      <h2>6. Color Palette</h2>
+      <div class="palette">
+        <div class="color-sample red">#B30000</div>
+        <div class="color-sample lightred">#F5C6CB</div>
+        <div class="color-sample gray">#E0E0E0</div>
+        <div class="color-sample white">#FFFFFF</div>
+      </div>
+      <p>These colors maintain contrast and reinforce the theme of care, urgency, and trust.</p>
+    </section>
+
+    <!-- 7. Typography -->
+    <section>
+      <h2>7. Typography Sample</h2>
+      <p class="font-sample">
+        “Typography is the voice of the message.” This project uses Arial for readability across devices.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sujan Pokhrel | DonateLife</p>
+  </footer>
+</body>
+</html>

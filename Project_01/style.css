@@ -1,0 +1,204 @@
+/* ---------------------------------------------------------
+   DonateLife Style Guide
+   Author: Sujan Pokhrel
+   References: MDN Flexbox Guide, W3C Accessibility Docs
+--------------------------------------------------------- */
+
+/* Base layout and text */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f8;
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -5px;
+  font-size: 1rem;
+  color: #f5dddd;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem auto;
+  padding: 1.5rem 2rem;
+  width: 80%;
+  max-width: 900px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0.5rem 0;
+}
+
+/* Navigation Button */
+.nav-btn {
+  background-color: white;
+  color: #b30000;
+  border: 2px solid white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.nav-btn:hover {
+  background-color: #fff0f0;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.primary,
+.secondary {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.primary {
+  background-color: #b30000;
+  color: white;
+}
+.primary:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background-color: #f5c6cb;
+  color: #222;
+}
+.secondary:hover {
+  background-color: #ffdddd;
+  transform: translateY(-2px);
+}
+
+/* Links */
+.text-link {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Form elements */
+
+
+form {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 60%;
+  padding: 8px;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* Submit Button */
+.form-submit {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.form-submit:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+/* Linked image (interactive hover feedback) */
+.linked-image img {
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.linked-image img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Color Palette */
+.palette {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.color-sample {
+  width: 130px;
+  height: 120px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.red { background-color: #b30000; color: white; }
+.lightred { background-color: #f5c6cb; }
+.gray { background-color: #e0e0e0; }
+.white { background-color: #ffffff; border: 1px solid #ccc; }
+
+/* Typography Sample */
+.font-sample {
+  font-style: italic;
+  text-align: center;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #8a1c1c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
