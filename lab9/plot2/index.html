@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plot 2 – Sleep vs Productivity | Lab 9</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Plot 2 – Sleep vs Productivity</h1>
+  <h2>Author: Sujan Pokhrel</h2>
+
+  <div id="chart"></div>
+
+  <section>
+    <h3>Hypothesis</h3>
+    <p>
+      As sleep hours increase, productivity improves. However, higher stress or extended screen time may lower
+      this positive effect. I expect high productivity at around 7–8 hours of sleep with low stress and balanced screen time.
+    </p>
+
+    <h3>Question</h3>
+    <p>How does sleep duration affect productivity when considering stress and screen time?</p>
+
+    <h3>Data Elements</h3>
+    <ul>
+      <li><strong>X-axis:</strong> Sleep Hours (5.5–9 hours)</li>
+      <li><strong>Y-axis:</strong> Productivity (1–5 scale)</li>
+      <li><strong>Circle Size:</strong> Screen Time (hours)</li>
+      <li><strong>Circle Color:</strong> Stress Level (1–5, blue = low, red = high)</li>
+    </ul>
+
+    <h3>How Array.filter() Was Used</h3>
+    <p>
+      The <code>Array.filter()</code> method removes days with less than 6 hours of sleep, helping focus on
+      healthy sleep patterns and clearer data relationships. This made the visualization more meaningful and accurate.
+    </p>
+
+    <h3>Reflection</h3>
+    <p>
+      The scatterplot shows that individuals with higher sleep duration tend to have better productivity.
+      Redder circles (high stress) cluster around lower productivity, showing how stress limits performance.
+      Filtering the dataset helped highlight consistent sleep trends and removed unnecessary noise.
+    </p>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

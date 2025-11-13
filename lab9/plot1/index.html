@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plot 1 – Screen Time vs Stress | Lab 9</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Plot 1 – Screen Time vs Stress</h1>
+  <h2>Author: Sujan Pokhrel</h2>
+
+  <div id="chart"></div>
+
+  <section>
+    <h3>Hypothesis</h3>
+    <p>
+      As daily screen time increases, my stress levels rise. However, more sleep and balanced productivity may
+      reduce this stress. I expect higher screen time to correlate with higher stress and lower sleep duration.
+    </p>
+
+    <h3>Question</h3>
+    <p>
+      How does screen time impact stress when factoring in sleep duration and productivity levels?
+    </p>
+
+    <h3>Data Elements</h3>
+    <ul>
+      <li><strong>X-axis:</strong> Screen Time (4–10 hours)</li>
+      <li><strong>Y-axis:</strong> Stress (1–5 scale)</li>
+      <li><strong>Circle Size:</strong> Sleep Hours (5–9 hours)</li>
+      <li><strong>Circle Color:</strong> Productivity (1–5 scale, dark = high productivity)</li>
+    </ul>
+
+    <h3>How Array.sort() Was Used</h3>
+    <p>
+      The <code>Array.sort()</code> method sorts the dataset by sleep hours in descending order.
+      This ensures that larger circles (more sleep) are drawn first so smaller bubbles remain visible.
+      It improved both readability and the accuracy of overlapping data points.
+    </p>
+
+    <h3>Reflection</h3>
+    <p>
+      The visualization reveals a pattern where longer screen time correlates with higher stress.
+      Larger circles (indicating more sleep) appear at lower stress values, implying better rest reduces tension.
+      The darker-colored circles represent high productivity, often clustering at moderate stress levels.
+      Using <code>sort()</code> made the layering of bubbles cleaner and more interpretable.
+    </p>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
