@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Proposals - Sujan Pokhrel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 15px;
+        }
+        
+        .student-info {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .student-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        
+        .student-info strong {
+            color: #2c3e50;
+        }
+        
+        h2 {
+            color: #2980b9;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .dataset-description {
+            background: #e8f4f8;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .dataset-description p {
+            margin-bottom: 15px;
+        }
+        
+        .dataset-description ul {
+            margin-left: 20px;
+        }
+        
+        .dataset-description li {
+            margin: 10px 0;
+        }
+        
+        .sketch {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 5px solid #27ae60;
+        }
+        
+        .sketch h3 {
+            color: #27ae60;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .sketch h4 {
+            color: #16a085;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .sketch p {
+            margin: 10px 0;
+        }
+        
+        .sketch ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .sketch li {
+            margin: 8px 0;
+        }
+        
+        .hypothesis {
+            background: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #f39c12;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .pdf-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .pdf-link:hover {
+            background: #2980b9;
+        }
+        
+        .citations {
+            background: #f0f0f0;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 5px solid #95a5a6;
+        }
+        
+        .citations h2 {
+            color: #7f8c8d;
+            border-left-color: #95a5a6;
+        }
+        
+        .citation-item {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+        
+        .citation-item h4 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        .citation-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .citation-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .citation-item em {
+            display: block;
+            margin-top: 5px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization Proposals</h1>
+        
+        <div class="student-info">
+            <p><strong>Student:</strong> Sujan Pokhrel</p>
+            <p><strong>Dataset:</strong> Personal Screen Time, Stress, Sleep, and Productivity Tracking</p>
+        </div>
+        
+        <div class="dataset-description">
+            <h2>Dataset Description</h2>
+            <p>
+                I have been collecting daily data on four interconnected aspects of my life: screen time, 
+                stress levels, sleep duration, and productivity ratings. This data spans 14 days and captures:
+            </p>
+            <ul>
+                <li>
+                    <strong>Screen Time:</strong> Total daily screen exposure in hours, including phone, 
+                    computer, and tablet usage (range: 4.8-9.2 hours)
+                </li>
+                <li>
+                    <strong>Stress Level:</strong> Self-assessed on a 1-5 scale, where 1 represents minimal 
+                    stress and 5 represents very high stress (range: 1-5)
+                </li>
+                <li>
+                    <strong>Sleep Hours:</strong> Total sleep duration per night in hours, measured from 
+                    bedtime to wake time (range: 5.5-8.5 hours)
+                </li>
+                <li>
+                    <strong>Productivity:</strong> Self-rated daily productivity on a 1-5 scale, where 1 
+                    represents very unproductive and 5 represents highly productive (range: 1-5)
+                </li>
+            </ul>
+        </div>
+        
+        <!-- SKETCH 1 -->
+        <div class="sketch">
+            <h3>Sketch 1: Enhanced Scatterplot with Sleep Bubbles</h3>
+            
+            <h4>Hypothesis:</h4>
+            <div class="hypothesis">
+                "As daily screen time increases, stress levels increase. Additionally, decreased sleep 
+                hours correlate with both higher stress and lower productivity levels."
+            </div>
+            
+            <h4>Data Elements Used:</h4>
+            <ul>
+                <li><strong>X-axis:</strong> Screen Time (hours) - Range: 4-10 hours</li>
+                <li><strong>Y-axis:</strong> Stress Level (1-5 scale) - Range: 0-6 (extended to show full context)</li>
+                <li><strong>Circle Size:</strong> Sleep Hours - Range: 5.5-8.5 hours (larger circles = more sleep)</li>
+                <li><strong>Circle Color:</strong> Productivity Level (1-5 scale) - Gradient from light green (#a8e6cf) 
+                    representing low productivity to dark green (#004d40) representing high productivity</li>
+            </ul>
+            
+            <h4>Visual Representation:</h4>
+            <p>
+                This bubble plot positions each day as a circle where the horizontal position shows screen time 
+                and the vertical position shows stress level. The size of each bubble represents sleep duration, 
+                with larger bubbles indicating more sleep hours. The color encodes productivity, with darker green 
+                shades representing higher productivity levels. This design allows viewers to see four dimensions 
+                simultaneously and identify patterns such as "high screen time combined with low sleep results in 
+                high stress and low productivity." The visualization uses proportional sizing (square root scale) 
+                to ensure accurate perception of sleep differences, and semi-transparent circles with black outlines 
+                prevent larger bubbles from completely obscuring smaller ones.
+            </p>
+            
+            <a href="image/sketch1.pdf" class="pdf-link">View Sketch 1 (PDF)</a>
+        </div>
+        
+        <!-- SKETCH 2 -->
+        <div class="sketch">
+            <h3>Sketch 2: Parallel Coordinates Plot</h3>
+            
+            <h4>Question:</h4>
+            <div class="hypothesis">
+                "What are the multi-dimensional patterns between screen time, stress, sleep, and productivity, 
+                and can we identify 'healthy' versus 'unhealthy' day profiles based on how these variables 
+                cluster together?"
+            </div>
+            
+            <h4>Data Elements Used:</h4>
+            <ul>
+                <li><strong>Axis 1:</strong> Screen Time (hours) - Range: 4-10 hours, displayed on vertical scale</li>
+                <li><strong>Axis 2:</strong> Stress Level (1-5 scale) - Range: 1-5, displayed on vertical scale</li>
+                <li><strong>Axis 3:</strong> Sleep Hours - Range: 5-9 hours, displayed on vertical scale</li>
+                <li><strong>Axis 4:</strong> Productivity Level (1-5 scale) - Range: 1-5, displayed on vertical scale</li>
+                <li><strong>Line Color:</strong> Stress level - Gradient from blue (#2196f3) for low stress (1-2), 
+                    through orange (#ffa726) for moderate stress (3), to red (#f44336) for high stress (4-5)</li>
+            </ul>
+            
+            <h4>Visual Representation:</h4>
+            <p>
+                Four vertical axes are arranged side-by-side at equal intervals, each representing one variable 
+                scaled from its minimum to maximum value. Each day in the dataset is represented by a colored line 
+                that connects its values across all four axes. Lines are colored based on stress level, making it 
+                immediately visible which days were calm (blue) versus stressful (red). This visualization excels 
+                at revealing whether certain combinations of values consistently occur together. For example, blue 
+                lines (low stress days) tend to pass through high values on the sleep axis and low values on the 
+                screen time axis, while also ending high on the productivity axis. This clustering pattern makes it 
+                easy to identify "healthy day profiles" versus "unhealthy day profiles" and understand the 
+                relationships between all four dimensions simultaneously.
+            </p>
+            
+            <a href="image/sketch3.pdf" class="pdf-link">View Sketch 2 (PDF)</a>
+        </div>
+        
+        <!-- SKETCH 3 -->
+        <div class="sketch">
+            <h3>Sketch 3: Radial Sleep-Stress Flower Chart</h3>
+            
+            <h4>Hypothesis:</h4>
+            <div class="hypothesis">
+                "Days with optimal sleep (7.5-8.5 hours) cluster toward lower stress and higher productivity, 
+                creating a visual 'bloom' pattern when stress is low. As screen time increases, this pattern 
+                'wilts' toward higher stress regions, with petals appearing smaller and closer to the center."
+            </div>
+            
+            <h4>Data Elements Used:</h4>
+            <ul>
+                <li><strong>Angular Position:</strong> Screen Time (hours) - Range: 4-10 hours, mapped to 0-360 
+                    degrees around the circle (like hours on a clock face)</li>
+                <li><strong>Radial Distance from Center:</strong> Sleep Hours - Range: 5-9 hours, where points 
+                    closer to the center represent less sleep and points further out represent more sleep</li>
+                <li><strong>Petal Color:</strong> Stress Level (1-5 scale) - Gradient from calm blue (#2196f3) 
+                    for low stress to intense red (#f44336) for high stress</li>
+                <li><strong>Petal Shape/Size:</strong> Productivity Level (1-5 scale) - Larger, fuller petal 
+                    shapes represent higher productivity (level 4-5), medium shapes represent moderate productivity 
+                    (level 3), and smaller petals represent lower productivity (level 1-2)</li>
+            </ul>
+            
+            <h4>Visual Representation:</h4>
+            <p>
+                This creative visualization arranges data in a circular "flower" pattern where each day appears 
+                as a petal extending from the center. The center of the circle represents minimal sleep, and 
+                petals extend outward based on sleep hours—the more sleep, the further from center. Each petal's 
+                angular position around the circle (0-360 degrees) corresponds to screen time hours, similar to 
+                hours on a clock. Petal color encodes stress level using an intuitive blue-to-red scale (blue for 
+                calm, red for stressed), while petal size represents productivity level. "Healthy days" appear as 
+                large blue petals in the outer ring, representing lots of sleep, low stress, and high productivity—
+                these petals "bloom" outward. "Unhealthy days" appear as small red petals near the center, 
+                representing poor sleep, high stress, and low productivity—these petals "wilt" inward. This 
+                metaphorical approach makes the data emotionally resonant and immediately understandable while 
+                remaining quantitatively accurate. Concentric guide rings mark different sleep hour zones, and 
+                angular markers indicate screen time ranges, ensuring precise data reading despite the creative format.
+            </p>
+            
+            <a href="image/sketch2.pdf" class="pdf-link">View Sketch 3 (PDF)</a>
+        </div>
+        
+        <!-- CITATIONS -->
+        <div class="citations">
+            <h2>Design Resources & Citations</h2>
+            
+            <div class="citation-item">
+                <h4>1. Data to Viz Decision Tree</h4>
+                <p><em>Source:</em> <a href="https://www.data-to-viz.com/" target="_blank">https://www.data-to-viz.com/</a></p>
+                <p>
+                    <em>How I used it:</em> I used the interactive decision tree on this site to determine which 
+                    visualization types work best with my dataset of four numeric variables. Starting from the 
+                    "Explore" tab, I selected my data type (numeric for all variables) and the tool suggested 
+                    several appropriate formats including scatterplots and parallel coordinates. This directly 
+                    influenced my choice of parallel coordinates for Sketch 2, as the site explained that this 
+                    format excels at showing patterns and clusters across multiple continuous variables 
+                    simultaneously. The examples showed me how lines connecting values across axes can reveal 
+                    "profiles" in the data, which aligned perfectly with my goal of identifying healthy versus 
+                    unhealthy day patterns.
+                </p>
+            </div>
+            
+            <div class="citation-item">
+                <h4>2. Observable D3 Gallery - Parallel Coordinates</h4>
+                <p><em>Source:</em> <a href="https://observablehq.com/@d3/parallel-coordinates" target="_blank">https://observablehq.com/@d3/parallel-coordinates</a></p>
+                <p>
+                    <em>How I used it:</em> This interactive example demonstrated the technical implementation of 
+                    parallel coordinates plots, showing me exactly how to arrange multiple vertical axes at equal 
+                    intervals and connect data points with lines. The example used monochrome lines, but it inspired 
+                    me to add stress-based color encoding to make patterns more immediately visible in my Sketch 2. 
+                    I also learned from this example that semi-transparent lines are essential when many lines 
+                    overlap, as it allows viewers to see density patterns where multiple days share similar profiles. 
+                    The axis labeling approach in this example informed my decision to clearly label each axis at 
+                    both top and bottom with variable names and ranges.
+                </p>
+            </div>
+            
+            <div class="citation-item">
+                <h4>3. Dear Data Project</h4>
+                <p><em>Source:</em> <a href="http://www.dear-data.com/theproject" target="_blank">http://www.dear-data.com/theproject</a></p>
+                <p>
+                    <em>How I used it:</em> The Dear Data project's organic, hand-drawn visualizations inspired my 
+                    Sketch 3 radial flower design. Specifically, I studied several weeks where the creators used 
+                    radial and circular layouts to represent time-based personal data. Week 3's "A Week of Complaints" 
+                    used radial positioning to encode different aspects of data, which helped me conceptualize how 
+                    to map my four variables onto a circular structure. The project taught me that creative, 
+                    metaphorical visualizations can be both emotionally engaging and quantitatively accurate when 
+                    designed with clear encoding rules. This inspired me to use the "blooming flower" metaphor where 
+                    healthy days bloom outward and unhealthy days wilt inward, making the data more intuitive and 
+                    memorable while maintaining precise numerical relationships through radial distance and angular position.
+                </p>
+            </div>
+            
+            <div class="citation-item">
+                <h4>4. "Visualizing Data: Mapping Data onto Aesthetics" (Fundamentals of Data Visualization)</h4>
+                <p><em>Source:</em> O'Reilly Learning Platform - Fundamentals of Data Visualization, Chapter 2</p>
+                <p><em>Access:</em> <a href="https://learning.oreilly.com/library/view/fundamentals-of-data/9781492031079/ch02.html" target="_blank">Via O'Reilly temporary access</a></p>
+                <p>
+                    <em>How I used it:</em> This chapter's detailed explanation of the "rule of proportional ink" 
+                    was crucial for my Sketch 1 design. The reading explained that when encoding data with area 
+                    (such as circle size), the visual element's area should be proportional to the data value, not 
+                    the radius. This taught me to use a square root scale (d3.scaleSqrt) for my bubble sizes rather 
+                    than a linear scale, ensuring that a day with 8 hours of sleep appears to have twice the circle 
+                    area (not twice the radius) of a day with 4 hours of sleep. Without this reading, my bubble plot 
+                    would have contained visual distortions that could mislead viewers about the magnitude of sleep 
+                    differences. The chapter also reinforced the importance of using appropriate color scales, which 
+                    influenced my choice of a single-hue gradient (light to dark green) for productivity in Sketch 1 
+                    rather than a multi-hue rainbow that might imply ordering where none exists.
+                </p>
+            </div>
+            
+            <div class="citation-item">
+                <h4>5. Information Is Beautiful - NYT Best Visualizations</h4>
+                <p><em>Source:</em> <a href="https://www.informationisbeautifulawards.com/" target="_blank">https://www.informationisbeautifulawards.com/</a></p>
+                <p>
+                    <em>How I used it:</em> Studying award-winning visualizations from The New York Times and other 
+                    publications taught me that clarity and immediate comprehension should take priority over visual 
+                    complexity or "coolness factor." Many winning designs used simple, clear visual encodings with 
+                    comprehensive legends rather than elaborate graphics. This influenced several decisions across all 
+                    three sketches: keeping my color schemes simple and intuitive (blue for calm, red for stress), 
+                    ensuring all axes have clear labels with units, and including detailed legends that explain every 
+                    visual encoding. The examples also showed me the importance of annotations and callouts that guide 
+                    the viewer's attention to key patterns, which I incorporated into all three sketches with text 
+                    labels like "High screen time → higher stress" and "Healthy days bloom outward."
+                </p>
+            </div>
+            
+            <div class="citation-item">
+                <h4>6. The Data Visualisation Catalogue</h4>
+                <p><em>Source:</em> <a href="https://datavizcatalogue.com/index.html" target="_blank">https://datavizcatalogue.com/</a></p>
+                <p>
+                    <em>How I used it:</em> I used the "Search by Function" page to explore visualization types 
+                    suitable for showing correlations and comparisons across multiple variables. This catalogue 
+                    provided clear explanations of when to use each chart type and what kinds of insights each 
+                    reveals. It helped me confirm that scatterplots are ideal for showing correlations between two 
+                    continuous variables (Sketch 1) and that adding size and color encodings can extend this to four 
+                    dimensions. The catalogue's description of radial visualizations also validated my creative 
+                    approach in Sketch 3, showing that circular layouts can effectively represent cyclical or 
+                    related data when designed with clear positional encodings.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
