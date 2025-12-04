@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Flower Chart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+  <div id="chart"></div>
+  <div class="tooltip"></div>
+  
+  <div class="content-container">
+    <div class="content-section">
+      <h1>Screen Time and Wellness - Wellness Flower Visualization</h1>
+      
+      <h2>About This Visualization</h2>
+      <p>This wellness flower chart explores the relationship between daily screen time and stress levels over a 14-day period. The primary hypothesis focuses on two key factors: <strong>screen time</strong> (represented by the angle/position around the circle) and <strong>stress levels</strong> (represented by petal color, ranging from blue for low stress to red for high stress).</p>
+      
+      <h3>Additional Data Elements</h3>
+      <p>Beyond the two primary factors in the hypothesis, this visualization incorporates two additional wellness metrics that provide deeper context:</p>
+      
+      <p><strong>Sleep Hours</strong> (Distance from center): Each petal's distance from the black center circle represents how many hours of sleep were recorded that day. Petals closer to the center indicate less sleep (around 5.5 hours), while petals near the outer edge represent more sleep (around 8.5 hours). The concentric rings mark specific sleep durations to help read this data accurately.</p>
+      
+      <p><strong>Productivity Levels</strong> (Petal size): The size of each petal represents self-reported productivity on a scale of 1-5, with larger petals indicating higher productivity. This additional dimension helps us understand whether the relationship between screen time and stress might be mediated by other factors like productivity and sleep quality.</p>
+      
+      <p>These additional elements relate directly to the hypothesis by showing potential confounding or mediating variables. For instance, days with high screen time and high stress might also show reduced sleep, suggesting that sleep deprivation could be part of the causal chain between screen time and stress.</p>
+      
+      <h2>Patterns and Observations</h2>
+      <p>Looking at the visualization, several clear patterns emerge from the 14 days of data:</p>
+      
+      <p><strong>Screen Time and Stress Correlation:</strong> There is a visible trend showing that petals positioned at higher screen time angles (7-10 hours, appearing on the right side of the flower) tend to display warmer colors (orange to red), indicating elevated stress levels (3-5). In contrast, petals at lower screen time angles (4-6 hours, appearing on the left side) predominantly show cooler colors (blue to light blue), representing lower stress levels (1-2). This pattern supports the hypothesis that higher screen time correlates with increased stress.</p>
+      
+      <p><strong>Sleep as a Mediating Factor:</strong> An interesting secondary pattern shows that days with lower stress (blue petals) are generally positioned farther from the center, indicating 7.5-8.5 hours of sleep. Days with high stress (red petals) cluster closer to the center with only 5.5-6.5 hours of sleep. This suggests that inadequate sleep may amplify the stress impact of high screen time, or that stress itself disrupts sleep quality.</p>
+      
+      <p><strong>Productivity Insights:</strong> The smallest petals (low productivity, levels 1-2) appear almost exclusively in the high-screen-time, high-stress region, while the largest petals (high productivity, levels 4-5) concentrate in the low-screen-time, low-stress area with better sleep. This indicates that the combination of excessive screen time and elevated stress significantly impairs productivity.</p>
+      
+      <h2>Conclusion</h2>
+      <p>The data strongly supports the hypothesis: higher daily screen time is indeed associated with increased stress levels. However, the visualization reveals that this relationship exists within a complex ecosystem of wellness factors. The clustering of red petals (high stress) with shorter distances from center (poor sleep) and smaller sizes (low productivity) in the high-screen-time region suggests a compounding negative effect. Conversely, days with moderate screen time (under 6 hours) consistently show lower stress, better sleep, and higher productivity, forming a positive wellness cycle. This visualization demonstrates that managing screen time may be a key leverage point for improving multiple aspects of wellness simultaneously.</p>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
