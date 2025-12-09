@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Blood Donation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="top-bar">
+    <div class="logo-wrap">
+      <div class="logo-icon">💉</div>
+      <div class="logo-text"><span>Blood</span> Donation</div>
+    </div>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="find-camp.html" class="nav-link">Find Camp</a>
+    <a href="register.html" class="nav-link active">Register</a>
+    <a href="eligibility.html" class="nav-link">Eligibility</a>
+    <a href="awareness.html" class="nav-link">Awareness</a>
+    <a href="thankyou.html" class="nav-link">Thank You</a>
+  </nav>
+
+  <main class="container section">
+    <h2>Register to Donate</h2>
+
+    <!-- FIXED & WORKING FORM -->
+    <form class="simple-form" action="thankyou.html" method="GET">
+
+      <div class="form-row">
+        <label>Full Name</label>
+        <input type="text" name="fullname" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="form-row">
+        <label>City</label>
+        <input type="text" name="city" placeholder="Your City" required>
+      </div>
+
+      <div class="form-row">
+        <label>Preferred Donation Date</label>
+        <input type="date" name="date" required>
+      </div>
+
+      <!-- INTERACTIVE & WORKING SUBMIT BUTTON -->
+     <button id="real-submit" class="btn-primary" type="submit">Submit
+
+     </button>
+
+
+    </form>
+
+  </main>
+  <script src="scripts.js"></script>
+
+  <footer class="footer">
+    <p>© 2025 Blood Donation</p>
+  </footer>
+
+
+
+</body>
+</html>
