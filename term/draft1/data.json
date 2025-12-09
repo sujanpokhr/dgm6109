@@ -1,0 +1,272 @@
+[
+  {
+    "date": "2025-10-08",
+    "screenTime": 7.0,
+    "socialMedia": 3.5,
+    "schoolTime": 3.0,
+    "sleep": 6.5,
+    "productivity": 3,
+    "stress": 3
+  },
+  {
+    "date": "2025-10-09",
+    "screenTime": 8.0,
+    "socialMedia": 4.5,
+    "schoolTime": 2.5,
+    "sleep": 6.0,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-10-10",
+    "screenTime": 6.0,
+    "socialMedia": 2.0,
+    "schoolTime": 3.5,
+    "sleep": 7.5,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-11",
+    "screenTime": 9.2,
+    "socialMedia": 5.0,
+    "schoolTime": 2.5,
+    "sleep": 5.5,
+    "productivity": 1,
+    "stress": 5
+  },
+  {
+    "date": "2025-10-12",
+    "screenTime": 5.5,
+    "socialMedia": 1.5,
+    "schoolTime": 3.0,
+    "sleep": 8.0,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-13",
+    "screenTime": 4.8,
+    "socialMedia": 1.2,
+    "schoolTime": 3.8,
+    "sleep": 8.5,
+    "productivity": 5,
+    "stress": 1
+  },
+  {
+    "date": "2025-10-14",
+    "screenTime": 7.8,
+    "socialMedia": 3.6,
+    "schoolTime": 3.2,
+    "sleep": 6.2,
+    "productivity": 3,
+    "stress": 3
+  },
+  {
+    "date": "2025-10-15",
+    "screenTime": 6.5,
+    "socialMedia": 3.0,
+    "schoolTime": 3.0,
+    "sleep": 7.0,
+    "productivity": 3,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-16",
+    "screenTime": 8.2,
+    "socialMedia": 4.5,
+    "schoolTime": 2.8,
+    "sleep": 6.0,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-10-17",
+    "screenTime": 5.0,
+    "socialMedia": 1.5,
+    "schoolTime": 3.5,
+    "sleep": 8.0,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-18",
+    "screenTime": 9.0,
+    "socialMedia": 5.0,
+    "schoolTime": 3.0,
+    "sleep": 5.5,
+    "productivity": 1,
+    "stress": 5
+  },
+  {
+    "date": "2025-10-19",
+    "screenTime": 4.8,
+    "socialMedia": 1.2,
+    "schoolTime": 3.5,
+    "sleep": 8.5,
+    "productivity": 5,
+    "stress": 1
+  },
+  {
+    "date": "2025-10-20",
+    "screenTime": 7.2,
+    "socialMedia": 3.8,
+    "schoolTime": 3.5,
+    "sleep": 6.5,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-10-21",
+    "screenTime": 5.5,
+    "socialMedia": 1.5,
+    "schoolTime": 4.5,
+    "sleep": 8.0,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-22",
+    "screenTime": 6.8,
+    "socialMedia": 2.8,
+    "schoolTime": 3.5,
+    "sleep": 7.0,
+    "productivity": 3,
+    "stress": 3
+  },
+  {
+    "date": "2025-10-23",
+    "screenTime": 8.5,
+    "socialMedia": 4.2,
+    "schoolTime": 3.0,
+    "sleep": 5.8,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-10-24",
+    "screenTime": 5.2,
+    "socialMedia": 1.8,
+    "schoolTime": 3.5,
+    "sleep": 8.2,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-25",
+    "screenTime": 7.5,
+    "socialMedia": 3.5,
+    "schoolTime": 3.2,
+    "sleep": 6.8,
+    "productivity": 3,
+    "stress": 3
+  },
+  {
+    "date": "2025-10-26",
+    "screenTime": 9.5,
+    "socialMedia": 5.5,
+    "schoolTime": 2.5,
+    "sleep": 5.2,
+    "productivity": 1,
+    "stress": 5
+  },
+  {
+    "date": "2025-10-27",
+    "screenTime": 4.5,
+    "socialMedia": 1.0,
+    "schoolTime": 3.8,
+    "sleep": 8.8,
+    "productivity": 5,
+    "stress": 1
+  },
+  {
+    "date": "2025-10-28",
+    "screenTime": 6.2,
+    "socialMedia": 2.2,
+    "schoolTime": 3.5,
+    "sleep": 7.5,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-29",
+    "screenTime": 8.8,
+    "socialMedia": 4.8,
+    "schoolTime": 3.0,
+    "sleep": 5.5,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-10-30",
+    "screenTime": 5.8,
+    "socialMedia": 2.0,
+    "schoolTime": 3.5,
+    "sleep": 7.8,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-10-31",
+    "screenTime": 7.2,
+    "socialMedia": 3.2,
+    "schoolTime": 3.5,
+    "sleep": 6.5,
+    "productivity": 3,
+    "stress": 3
+  },
+  {
+    "date": "2025-11-01",
+    "screenTime": 6.0,
+    "socialMedia": 2.5,
+    "schoolTime": 3.0,
+    "sleep": 7.2,
+    "productivity": 4,
+    "stress": 2
+  },
+  {
+    "date": "2025-11-02",
+    "screenTime": 9.0,
+    "socialMedia": 5.2,
+    "schoolTime": 2.5,
+    "sleep": 5.8,
+    "productivity": 1,
+    "stress": 5
+  },
+  {
+    "date": "2025-11-03",
+    "screenTime": 5.0,
+    "socialMedia": 1.5,
+    "schoolTime": 3.5,
+    "sleep": 8.5,
+    "productivity": 5,
+    "stress": 1
+  },
+  {
+    "date": "2025-11-04",
+    "screenTime": 7.8,
+    "socialMedia": 3.8,
+    "schoolTime": 3.0,
+    "sleep": 6.2,
+    "productivity": 2,
+    "stress": 4
+  },
+  {
+    "date": "2025-11-05",
+    "screenTime": 6.5,
+    "socialMedia": 2.8,
+    "schoolTime": 3.2,
+    "sleep": 7.0,
+    "productivity": 3,
+    "stress": 2
+  },
+  {
+    "date": "2025-11-06",
+    "screenTime": 8.2,
+    "socialMedia": 4.2,
+    "schoolTime": 3.0,
+    "sleep": 6.0,
+    "productivity": 2,
+    "stress": 4
+  }
+]

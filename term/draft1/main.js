@@ -1,22 +1,7 @@
 "use strict";
 
-// ----------- DATASET -----------
-let data = [
-  { screenTime: 7, productivity: 3, sleep: 6.5, stress: 3 },
-  { screenTime: 8, productivity: 2, sleep: 6, stress: 4 },
-  { screenTime: 6, productivity: 4, sleep: 7.5, stress: 2 },
-  { screenTime: 9.2, productivity: 1, sleep: 5.5, stress: 5 },
-  { screenTime: 5.5, productivity: 4, sleep: 8, stress: 2 },
-  { screenTime: 4.8, productivity: 5, sleep: 8.5, stress: 1 },
-  { screenTime: 7.8, productivity: 3, sleep: 6.2, stress: 3 },
-  { screenTime: 6.5, productivity: 3, sleep: 7, stress: 2 },
-  { screenTime: 8.2, productivity: 2, sleep: 6, stress: 4 },
-  { screenTime: 5, productivity: 4, sleep: 8, stress: 2 },
-  { screenTime: 9, productivity: 1, sleep: 5.5, stress: 5 },
-  { screenTime: 4.8, productivity: 5, sleep: 8.5, stress: 1 },
-  { screenTime: 7.2, productivity: 2, sleep: 6.5, stress: 4 },
-  { screenTime: 5.5, productivity: 4, sleep: 8, stress: 2 }
-];
+// ----------- DATASET (30 Days: Oct 8 - Nov 6, 2025) -----------
+d3.json("data.json").then(function(data) {
 
 // ------------ SVG SETUP ------------
 let width = 1000;
@@ -95,7 +80,7 @@ svg.append("text")
   .attr("y", centerY - 105)
   .attr("text-anchor", "middle")
   .attr("font-size", "10px")
-  .attr("fill", "#999")
+  .attr("fill", "#747373ff")
   .text("5.5h");
 
 svg.append("circle")
@@ -161,7 +146,7 @@ svg.append("text")
   .attr("text-anchor", "middle")
   .attr("font-size", "10px")
   .attr("fill", "#666")
-  .text("4h");
+  .text("4h"); 
 
 let angle5 = angleScale(5);
 svg.append("line")
@@ -263,11 +248,18 @@ svg.append("text")
 const tooltip = d3.select(".tooltip");
 
 // ------------ PETALS ------------
-data.forEach((d) => {
+data.forEach(function(d) {
+
   let angle = angleScale(d.screenTime);
   let r = radiusScale(d.sleep);
+
   let px = centerX + Math.cos(angle) * r;
   let py = centerY + Math.sin(angle) * r;
+
+  svg.append("ellipse")
+    .attr("class", "petal")
+     
+
 
   svg.append("ellipse")
     .attr("class", "petal")
@@ -299,24 +291,17 @@ data.forEach((d) => {
 svg.append("circle")
   .attr("cx", centerX)
   .attr("cy", centerY)
-  .attr("r", 40)
+  .attr("r", 5)
   .attr("fill", "black");
 
-svg.append("text")
-  .attr("x", centerX)
-  .attr("y", centerY + 5)
-  .attr("text-anchor", "middle")
-  .attr("font-size", "11px")
-  .attr("font-weight", "bold")
-  .attr("fill", "white")
-  .text("CENTER");
+
 
 // ------------ LEFT LEGEND BOX ------------
 svg.append("rect")
   .attr("x", 20)
   .attr("y", 100)
   .attr("width", 140)
-  .attr("height", 280)
+  .attr("height", 300)
   .attr("fill", "white")
   .attr("stroke", "#999")
   .attr("stroke-width", 2)
@@ -423,15 +408,15 @@ svg.append("text")
   .text("Level 3");
 
 svg.append("ellipse")
-  .attr("cx", 50)
-  .attr("cy", 355)
+  .attr("cx", 58)
+  .attr("cy", 365)
   .attr("rx", sizeScale(5))
   .attr("ry", sizeScale(5) * 0.6)
   .attr("fill", "#999")
   .attr("stroke", "#666");
 svg.append("text")
-  .attr("x", 80)
-  .attr("y", 360)
+  .attr("x", 95)
+  .attr("y", 365)
   .attr("font-size", "11px")
   .text("Level 5");
 
@@ -467,7 +452,8 @@ svg.append("text")
 
 svg.append("text")
   .attr("x", 850)
-  .attr("y", 185)
+  .attr("y", 185) 
   .attr("font-size", "10px")
   .attr("fill", "#666")
-  .text("Hover for details");
+  .text("Hover for details")
+});
